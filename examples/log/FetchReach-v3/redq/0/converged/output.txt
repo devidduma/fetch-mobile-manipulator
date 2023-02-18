@@ -1,0 +1,39 @@
+C:\Users\devid\PycharmProjects\thesis\venv\Scripts\python.exe "C:\Users\devid\OneDrive\Epoka MSc\3rd WS2223\CEN 593 Graduate Project\thesis\examples\fetch_her_redq.py"
+Observations shape: {'observation': (10,), 'achieved_goal': (3,), 'desired_goal': (3,)}
+Actions shape: (4,)
+Action range: -1.0 1.0
+Epoch #1: 5001it [02:25, 34.26it/s, env_step=5000, len=50, loss/actor=3.139, loss/critics=0.392, n/ep=1, n/st=1, rew=-50.00]
+Epoch #1: test_reward: -49.000000 ± 1.612452, best_reward: -48.900000 ± 3.300000 in #0
+Epoch #2: 5001it [03:36, 23.13it/s, env_step=10000, len=50, loss/actor=4.007, loss/critics=0.425, n/ep=1, n/st=1, rew=-50.00]
+Epoch #2: test_reward: -48.700000 ± 1.676305, best_reward: -48.700000 ± 1.676305 in #2
+Epoch #3: 5001it [05:24, 15.39it/s, env_step=15000, len=50, loss/actor=3.455, loss/critics=0.370, n/ep=1, n/st=1, rew=-30.00]
+Epoch #3: test_reward: -33.200000 ± 18.109666, best_reward: -33.200000 ± 18.109666 in #3
+Epoch #4: 5001it [05:23, 15.45it/s, env_step=20000, len=50, loss/actor=1.749, loss/critics=0.279, n/ep=1, n/st=1, rew=-4.00]
+Epoch #5:   0%|          | 0/5000 [00:00<?, ?it/s]Epoch #4: test_reward: -2.000000 ± 1.183216, best_reward: -2.000000 ± 1.183216 in #4
+Epoch #5: 5001it [05:20, 15.59it/s, env_step=25000, len=50, loss/actor=-0.761, loss/critics=0.317, n/ep=1, n/st=1, rew=-3.00]
+Epoch #5: test_reward: -2.100000 ± 1.135782, best_reward: -2.000000 ± 1.183216 in #4
+Epoch #6: 5001it [03:56, 21.11it/s, env_step=30000, len=50, loss/actor=-2.715, loss/critics=0.498, n/ep=1, n/st=1, rew=-1.00]
+Epoch #6: test_reward: -1.800000 ± 0.871780, best_reward: -1.800000 ± 0.871780 in #6
+Epoch #7: 5001it [05:30, 15.14it/s, env_step=35000, len=50, loss/actor=-3.946, loss/critics=0.702, n/ep=1, n/st=1, rew=-3.00]
+Epoch #7: test_reward: -2.600000 ± 0.663325, best_reward: -1.800000 ± 0.871780 in #6
+Epoch #8: 5001it [05:43, 14.57it/s, env_step=40000, len=50, loss/actor=-4.703, loss/critics=0.831, n/ep=1, n/st=1, rew=-2.00]
+Epoch #8: test_reward: -2.000000 ± 1.000000, best_reward: -1.800000 ± 0.871780 in #6
+Epoch #9: 5001it [05:45, 14.47it/s, env_step=45000, len=50, loss/actor=-5.280, loss/critics=0.910, n/ep=1, n/st=1, rew=-3.00]
+Epoch #9: test_reward: -2.500000 ± 1.118034, best_reward: -1.800000 ± 0.871780 in #6
+Epoch #10: 5001it [04:57, 16.83it/s, env_step=50000, len=50, loss/actor=-5.779, loss/critics=0.995, n/ep=1, n/st=1, rew=-8.00]
+Epoch #10: test_reward: -2.500000 ± 0.670820, best_reward: -1.800000 ± 0.871780 in #6
+{'best_result': '-1.80 ± 0.87',
+ 'best_reward': -1.8,
+ 'duration': '2893.08s',
+ 'test_episode': 110,
+ 'test_speed': '678.77 step/s',
+ 'test_step': 5500,
+ 'test_time': '8.10s',
+ 'train_episode': 1000,
+ 'train_speed': '17.33 step/s',
+ 'train_step': 50000,
+ 'train_time/collector': '484.87s',
+ 'train_time/model': '2400.11s'}
+Final reward: -2.5, length: 50.0
+
+Process finished with exit code 0

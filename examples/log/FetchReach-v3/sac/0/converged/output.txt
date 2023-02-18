@@ -1,0 +1,39 @@
+C:\Users\devid\PycharmProjects\thesis\venv\Scripts\python.exe "C:\Users\devid\OneDrive\Epoka MSc\3rd WS2223\CEN 593 Graduate Project\thesis\examples\fetch_her_sac.py"
+Observations shape: {'observation': (10,), 'achieved_goal': (3,), 'desired_goal': (3,)}
+Actions shape: (4,)
+Action range: -1.0 1.0
+Epoch #1: 5001it [03:29, 23.91it/s, env_step=5000, len=50, loss/actor=1.540, loss/critic1=0.220, loss/critic2=0.229, n/ep=1, n/st=1, rew=-1.00]
+Epoch #2:   0%|          | 0/5000 [00:00<?, ?it/s]Epoch #1: test_reward: -1.700000 ± 0.458258, best_reward: -1.700000 ± 0.458258 in #1
+Epoch #2: 5001it [04:38, 17.97it/s, env_step=10000, len=50, loss/actor=-2.539, loss/critic1=0.400, loss/critic2=0.416, n/ep=1, n/st=1, rew=-4.00]
+Epoch #2: test_reward: -2.500000 ± 0.670820, best_reward: -1.700000 ± 0.458258 in #1
+Epoch #3: 5001it [02:59, 27.87it/s, env_step=15000, len=50, loss/actor=-4.449, loss/critic1=0.676, loss/critic2=0.691, n/ep=1, n/st=1, rew=-6.00]
+Epoch #4:   0%|          | 1/5000 [00:00<03:42, 22.48it/s, env_step=15001, len=50, loss/actor=-4.449, loss/critic1=0.676, loss/critic2=0.691, n/ep=0, n/st=1, rew=-6.00]Epoch #3: test_reward: -2.200000 ± 0.600000, best_reward: -1.700000 ± 0.458258 in #1
+Epoch #4: 5001it [03:40, 22.70it/s, env_step=20000, len=50, loss/actor=-5.519, loss/critic1=0.881, loss/critic2=0.882, n/ep=1, n/st=1, rew=-5.00]
+Epoch #4: test_reward: -2.700000 ± 0.781025, best_reward: -1.700000 ± 0.458258 in #1
+Epoch #5: 5001it [05:03, 16.45it/s, env_step=25000, len=50, loss/actor=-6.127, loss/critic1=1.052, loss/critic2=1.060, n/ep=1, n/st=1, rew=-5.00]
+Epoch #6:   0%|          | 0/5000 [00:00<?, ?it/s]Epoch #5: test_reward: -2.400000 ± 1.113553, best_reward: -1.700000 ± 0.458258 in #1
+Epoch #6: 5001it [03:23, 24.62it/s, env_step=30000, len=50, loss/actor=-6.603, loss/critic1=1.159, loss/critic2=1.141, n/ep=1, n/st=1, rew=-2.00]
+Epoch #7:   0%|          | 0/5000 [00:00<?, ?it/s]Epoch #6: test_reward: -2.200000 ± 0.979796, best_reward: -1.700000 ± 0.458258 in #1
+Epoch #7: 5001it [03:00, 27.67it/s, env_step=35000, len=50, loss/actor=-6.897, loss/critic1=1.301, loss/critic2=1.265, n/ep=1, n/st=1, rew=-6.00]
+Epoch #8:   0%|          | 0/5000 [00:00<?, ?it/s]Epoch #7: test_reward: -2.700000 ± 0.458258, best_reward: -1.700000 ± 0.458258 in #1
+Epoch #8: 5001it [03:06, 26.77it/s, env_step=40000, len=50, loss/actor=-7.206, loss/critic1=1.265, loss/critic2=1.223, n/ep=1, n/st=1, rew=-5.00]
+Epoch #8: test_reward: -2.000000 ± 1.183216, best_reward: -1.700000 ± 0.458258 in #1
+Epoch #9: 5001it [03:07, 26.71it/s, env_step=45000, len=50, loss/actor=-7.256, loss/critic1=1.332, loss/critic2=1.286, n/ep=1, n/st=1, rew=-5.00]
+Epoch #10:   0%|          | 0/5000 [00:00<?, ?it/s]Epoch #9: test_reward: -1.500000 ± 1.024695, best_reward: -1.500000 ± 1.024695 in #9
+Epoch #10: 5001it [03:11, 26.18it/s, env_step=50000, len=50, loss/actor=-7.367, loss/critic1=1.310, loss/critic2=1.259, n/ep=1, n/st=1, rew=-10.00]
+Epoch #10: test_reward: -2.500000 ± 0.806226, best_reward: -1.500000 ± 1.024695 in #9
+{'best_result': '-1.50 ± 1.02',
+ 'best_reward': -1.5,
+ 'duration': '2146.95s',
+ 'test_episode': 110,
+ 'test_speed': '810.45 step/s',
+ 'test_step': 5500,
+ 'test_time': '6.79s',
+ 'train_episode': 1000,
+ 'train_speed': '23.36 step/s',
+ 'train_step': 50000,
+ 'train_time/collector': '361.40s',
+ 'train_time/model': '1778.77s'}
+Final reward: -2.6, length: 50.0
+
+Process finished with exit code 0
