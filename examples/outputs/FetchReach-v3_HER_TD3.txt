@@ -1,0 +1,39 @@
+2023-02-13 16:55:56.930029: W tensorflow/compiler/xla/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer.so.7'; dlerror: libnvinfer.so.7: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/local/lib/python3.8/dist-packages/mujoco_py/binaries/linux/mujoco210/bin
+2023-02-13 16:55:56.930214: W tensorflow/compiler/xla/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer_plugin.so.7'; dlerror: libnvinfer_plugin.so.7: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/local/lib/python3.8/dist-packages/mujoco_py/binaries/linux/mujoco210/bin
+2023-02-13 16:55:56.930242: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Cannot dlopen some TensorRT libraries. If you would like to use Nvidia GPU with TensorRT, please make sure the missing libraries mentioned above are installed properly.
+Observations shape: {'observation': (10,), 'achieved_goal': (3,), 'desired_goal': (3,)}
+Actions shape: (4,)
+Action range: -1.0 1.0
+Epoch #1: 5001it [06:56, 12.02it/s, env_step=5000, len=50, loss/actor=7.369, loss/critic1=0.848, loss/critic2=0.970, n/ep=1, n/st=1, rew=-50.00]
+Epoch #1: test_reward: -49.300000 ± 0.781025, best_reward: -49.300000 ± 0.781025 in #1
+Epoch #2: 5001it [07:06, 11.73it/s, env_step=10000, len=50, loss/actor=4.459, loss/critic1=0.611, loss/critic2=0.630, n/ep=1, n/st=1, rew=-2.00]
+Epoch #2: test_reward: -1.800000 ± 0.600000, best_reward: -1.800000 ± 0.600000 in #2
+Epoch #3: 5001it [07:11, 11.59it/s, env_step=15000, len=50, loss/actor=2.127, loss/critic1=0.256, loss/critic2=0.259, n/ep=1, n/st=1, rew=0.00]
+Epoch #3: test_reward: -1.700000 ± 0.640312, best_reward: -1.700000 ± 0.640312 in #3
+Epoch #4: 5001it [07:19, 11.38it/s, env_step=20000, len=50, loss/actor=1.392, loss/critic1=0.175, loss/critic2=0.174, n/ep=1, n/st=1, rew=-1.00]
+Epoch #4: test_reward: -1.700000 ± 0.781025, best_reward: -1.700000 ± 0.640312 in #3
+Epoch #5: 5001it [07:21, 11.34it/s, env_step=25000, len=50, loss/actor=0.906, loss/critic1=0.132, loss/critic2=0.133, n/ep=1, n/st=1, rew=-2.00]
+Epoch #5: test_reward: -1.200000 ± 0.748331, best_reward: -1.200000 ± 0.748331 in #5
+Epoch #6: 5001it [07:21, 11.32it/s, env_step=30000, len=50, loss/actor=0.706, loss/critic1=0.107, loss/critic2=0.104, n/ep=1, n/st=1, rew=-1.00]
+Epoch #6: test_reward: -1.700000 ± 1.004988, best_reward: -1.200000 ± 0.748331 in #5
+Epoch #7: 5001it [07:23, 11.26it/s, env_step=35000, len=50, loss/actor=0.609, loss/critic1=0.104, loss/critic2=0.105, n/ep=1, n/st=1, rew=0.00]
+Epoch #7: test_reward: -2.100000 ± 0.700000, best_reward: -1.200000 ± 0.748331 in #5
+Epoch #8: 5001it [07:35, 10.98it/s, env_step=40000, len=50, loss/actor=0.490, loss/critic1=0.091, loss/critic2=0.093, n/ep=1, n/st=1, rew=-3.00]
+Epoch #8: test_reward: -1.500000 ± 0.921954, best_reward: -1.200000 ± 0.748331 in #5
+Epoch #9: 5001it [07:39, 10.88it/s, env_step=45000, len=50, loss/actor=0.395, loss/critic1=0.080, loss/critic2=0.082, n/ep=1, n/st=1, rew=-2.00]
+Epoch #9: test_reward: -1.900000 ± 0.700000, best_reward: -1.200000 ± 0.748331 in #5
+Epoch #10: 5001it [07:41, 10.83it/s, env_step=50000, len=50, loss/actor=0.383, loss/critic1=0.076, loss/critic2=0.073, n/ep=1, n/st=1, rew=-2.00]
+Epoch #10: test_reward: -1.700000 ± 1.004988, best_reward: -1.200000 ± 0.748331 in #5
+{'best_result': '-1.20 ± 0.75',
+ 'best_reward': -1.2,
+ 'duration': '4437.09s',
+ 'test_episode': 110,
+ 'test_speed': '279.22 step/s',
+ 'test_step': 5500,
+ 'test_time': '19.70s',
+ 'train_episode': 1000,
+ 'train_speed': '11.32 step/s',
+ 'train_step': 50000,
+ 'train_time/collector': '617.54s',
+ 'train_time/model': '3799.86s'}
+Final reward: -2.2, length: 50.0
