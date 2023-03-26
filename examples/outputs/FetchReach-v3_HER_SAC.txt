@@ -1,39 +1,39 @@
-2023-02-28 15:24:05.311423: W tensorflow/compiler/xla/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer.so.7'; dlerror: libnvinfer.so.7: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/local/lib/python3.8/dist-packages/mujoco_py/binaries/linux/mujoco210/bin
-2023-02-28 15:24:05.311687: W tensorflow/compiler/xla/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer_plugin.so.7'; dlerror: libnvinfer_plugin.so.7: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/local/lib/python3.8/dist-packages/mujoco_py/binaries/linux/mujoco210/bin
-2023-02-28 15:24:05.311713: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Cannot dlopen some TensorRT libraries. If you would like to use Nvidia GPU with TensorRT, please make sure the missing libraries mentioned above are installed properly.
+G:\DD\fetch-mobile-manipulator\venv\Scripts\python.exe G:\DD\fetch-mobile-manipulator\examples\fetch_her_sac.py --task FetchReach-v3 --hidden-sizes 256 256 --actor-lr 1e-3 --critic-lr 3e-3 --gamma 0.98 --epoch 10 --step-per-epoch 5000
 Observations shape: {'observation': (10,), 'achieved_goal': (3,), 'desired_goal': (3,)}
 Actions shape: (4,)
 Action range: -1.0 1.0
-Epoch #1: 5001it [08:01, 10.38it/s, env_step=5000, len=50, loss/actor=-0.874, loss/critic1=0.274, loss/critic2=0.315, n/ep=1, n/st=1, rew=-4.00]
-Epoch #1: test_reward: -2.500000 ± 0.921954, best_reward: -2.500000 ± 0.921954 in #1
-Epoch #2: 5001it [08:14, 10.11it/s, env_step=10000, len=50, loss/actor=-3.540, loss/critic1=0.520, loss/critic2=0.538, n/ep=1, n/st=1, rew=-7.00]
-Epoch #2: test_reward: -1.800000 ± 0.871780, best_reward: -1.800000 ± 0.871780 in #2
-Epoch #3: 5001it [08:29,  9.82it/s, env_step=15000, len=50, loss/actor=-5.214, loss/critic1=0.836, loss/critic2=0.841, n/ep=1, n/st=1, rew=-3.00]
-Epoch #3: test_reward: -1.900000 ± 0.943398, best_reward: -1.800000 ± 0.871780 in #2
-Epoch #4: 5001it [08:36,  9.69it/s, env_step=20000, len=50, loss/actor=-6.322, loss/critic1=1.051, loss/critic2=1.053, n/ep=1, n/st=1, rew=-5.00]
-Epoch #4: test_reward: -2.300000 ± 1.417745, best_reward: -1.800000 ± 0.871780 in #2
-Epoch #5: 5001it [08:41,  9.59it/s, env_step=25000, len=50, loss/actor=-6.917, loss/critic1=1.274, loss/critic2=1.279, n/ep=1, n/st=1, rew=-3.00]
-Epoch #5: test_reward: -2.500000 ± 0.921954, best_reward: -1.800000 ± 0.871780 in #2
-Epoch #6: 5001it [08:47,  9.48it/s, env_step=30000, len=50, loss/actor=-7.368, loss/critic1=1.373, loss/critic2=1.388, n/ep=1, n/st=1, rew=-2.00]
-Epoch #6: test_reward: -2.000000 ± 1.000000, best_reward: -1.800000 ± 0.871780 in #2
-Epoch #7: 5001it [08:51,  9.41it/s, env_step=35000, len=50, loss/actor=-7.730, loss/critic1=1.536, loss/critic2=1.542, n/ep=1, n/st=1, rew=-6.00]
-Epoch #7: test_reward: -2.600000 ± 0.800000, best_reward: -1.800000 ± 0.871780 in #2
-Epoch #8: 5001it [08:55,  9.34it/s, env_step=40000, len=50, loss/actor=-8.048, loss/critic1=1.509, loss/critic2=1.510, n/ep=1, n/st=1, rew=-5.00]
-Epoch #8: test_reward: -1.900000 ± 0.943398, best_reward: -1.800000 ± 0.871780 in #2
-Epoch #9: 5001it [09:03,  9.20it/s, env_step=45000, len=50, loss/actor=-8.226, loss/critic1=1.602, loss/critic2=1.603, n/ep=1, n/st=1, rew=-5.00]
-Epoch #9: test_reward: -2.100000 ± 0.943398, best_reward: -1.800000 ± 0.871780 in #2
-Epoch #10: 5001it [09:10,  9.08it/s, env_step=50000, len=50, loss/actor=-8.423, loss/critic1=1.630, loss/critic2=1.630, n/ep=1, n/st=1, rew=-4.00]
-Epoch #10: test_reward: -1.700000 ± 1.268858, best_reward: -1.700000 ± 1.268858 in #10
-{'best_result': '-1.70 ± 1.27',
- 'best_reward': -1.7,
- 'duration': '5231.73s',
+Epoch #1: 5001it [03:22, 24.70it/s, env_step=5000, len=50, loss/actor=-0.622, loss/critic1=0.247, loss/critic2=0.296, n/ep=1, n/st=1, rew=-6.00]
+Epoch #1: test_reward: -2.000000 ± 0.774597, best_reward: -2.000000 ± 0.774597 in #1
+Epoch #2: 5001it [03:14, 25.73it/s, env_step=10000, len=50, loss/actor=-2.762, loss/critic1=0.401, loss/critic2=0.431, n/ep=1, n/st=1, rew=-3.00]
+Epoch #3:   0%|          | 0/5000 [00:00<?, ?it/s]Epoch #2: test_reward: -1.800000 ± 0.979796, best_reward: -1.800000 ± 0.979796 in #2
+Epoch #3: 5001it [03:20, 24.91it/s, env_step=15000, len=50, loss/actor=-3.945, loss/critic1=0.586, loss/critic2=0.614, n/ep=1, n/st=1, rew=-4.00]
+Epoch #4:   0%|          | 0/5000 [00:00<?, ?it/s]Epoch #3: test_reward: -2.000000 ± 0.894427, best_reward: -1.800000 ± 0.979796 in #2
+Epoch #4: 5001it [03:26, 24.26it/s, env_step=20000, len=50, loss/actor=-4.713, loss/critic1=0.690, loss/critic2=0.707, n/ep=1, n/st=1, rew=-7.00]
+Epoch #4: test_reward: -2.300000 ± 0.781025, best_reward: -1.800000 ± 0.979796 in #2
+Epoch #5: 5001it [03:24, 24.42it/s, env_step=25000, len=50, loss/actor=-5.062, loss/critic1=0.797, loss/critic2=0.811, n/ep=1, n/st=1, rew=-3.00]
+Epoch #5: test_reward: -1.900000 ± 0.943398, best_reward: -1.800000 ± 0.979796 in #2
+Epoch #6: 5001it [03:25, 24.33it/s, env_step=30000, len=50, loss/actor=-5.425, loss/critic1=0.859, loss/critic2=0.878, n/ep=1, n/st=1, rew=-10.00]
+Epoch #7:   0%|          | 0/5000 [00:00<?, ?it/s]Epoch #6: test_reward: -2.000000 ± 0.894427, best_reward: -1.800000 ± 0.979796 in #2
+Epoch #7: 5001it [03:30, 23.79it/s, env_step=35000, len=50, loss/actor=-5.744, loss/critic1=0.939, loss/critic2=0.955, n/ep=1, n/st=1, rew=-6.00]
+Epoch #7: test_reward: -2.400000 ± 1.113553, best_reward: -1.800000 ± 0.979796 in #2
+Epoch #8: 5001it [03:35, 23.23it/s, env_step=40000, len=50, loss/actor=-6.006, loss/critic1=0.932, loss/critic2=0.939, n/ep=1, n/st=1, rew=-7.00]
+Epoch #8: test_reward: -1.800000 ± 0.979796, best_reward: -1.800000 ± 0.979796 in #2
+Epoch #9: 5001it [03:39, 22.82it/s, env_step=45000, len=50, loss/actor=-6.160, loss/critic1=0.962, loss/critic2=0.973, n/ep=1, n/st=1, rew=-5.00]
+Epoch #9: test_reward: -2.300000 ± 1.100000, best_reward: -1.800000 ± 0.979796 in #2
+Epoch #10: 5001it [03:30, 23.74it/s, env_step=50000, len=50, loss/actor=-6.354, loss/critic1=1.007, loss/critic2=1.018, n/ep=1, n/st=1, rew=-7.00]
+Epoch #10: test_reward: -2.000000 ± 0.632456, best_reward: -1.800000 ± 0.979796 in #2
+{'best_result': '-1.80 ± 0.98',
+ 'best_reward': -1.8,
+ 'duration': '2073.17s',
  'test_episode': 110,
- 'test_speed': '279.89 step/s',
+ 'test_speed': '1486.89 step/s',
  'test_step': 5500,
- 'test_time': '19.65s',
+ 'test_time': '3.70s',
  'train_episode': 1000,
- 'train_speed': '9.59 step/s',
+ 'train_speed': '24.16 step/s',
  'train_step': 50000,
- 'train_time/collector': '637.40s',
- 'train_time/model': '4574.67s'}
-Final reward: -2.5, length: 50.0
+ 'train_time/collector': '413.97s',
+ 'train_time/model': '1655.50s'}
+Final reward: -2.4, length: 50.0
+
+Process finished with exit code 0
