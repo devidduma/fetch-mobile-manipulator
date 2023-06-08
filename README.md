@@ -17,17 +17,15 @@ Supported algorithms are listed below:
 - [Hindsight Experience Replay (HER)](https://arxiv.org/abs/1707.01495)
 
 ## Usage
-We can either train each task individually, or use Jupyter Notebooks to run multiple tasks, one after the other.
-- In [first_benchmark](./first_benchmark), we trained each task individually.
+We can either train each task individually, or use Jupyter Notebooks to run multiple tasks one after the other.
+- In [first_benchmark](./first_benchmark), we trained each task individually using *run configurations* in the IDE.
 - In [second_benchmark](./second_benchmark), we propose using Jupyter Notebooks to train one task after the other for each environment.
 
 ### Training with run configurations
-Training with run configurations, like we did in the first benchmark, can be achieved using *run configurations* in PyCharm or another IDE. We have uploaded the run configurations used in the first benchmark.
+Training with run configurations, like in the first benchmark, can be achieved using *run configurations* in PyCharm or another IDE. We have uploaded the run configurations used in the first benchmark.
 
 ### Training with Jupyter Notebooks
-Training with Jupyter Notebooks, like we propose in the second benchmark, can be achieved using the following steps.
-
-For each environment, a Jupyter Notebook is available to train 9 Deep Reinforcement Learning algorithms. To run the benchmark, go through the following steps:
+Training with Jupyter Notebooks, like we propose in the second benchmark, can be achieved using the following steps. For each environment, a Jupyter Notebook is available to train 9 Deep Reinforcement Learning algorithms.
 1. Create a virtual environment and install all dependencies in it from [requirements.txt](./requirements.txt).
 2. Execute all tasks in one notebook, to benchmark 9 DRL algorithms in that specific environment. To best use computational resources, we suggest executing 3 notebooks at a time. Each notebook takes approximately the same time to execute as other notebooks.
 3. When execution is complete, multiple details are saved in the notebooks. This includes speed of training, running times for training and testing, best scores etc. Pretrained agents and logs are then saved in [benchmark/log](./benchmark/log) folder and can be monitored with Tensorboard to generate graph plots.
