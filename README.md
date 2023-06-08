@@ -29,10 +29,11 @@ Training with run configurations, like in the first benchmark, can be achieved u
 ### Training with Jupyter Notebooks
 Training with Jupyter Notebooks, like we propose in the second benchmark, can be achieved using the following steps. For each environment, a Jupyter Notebook is available to train 9 Deep Reinforcement Learning algorithms.
 1. Create a virtual environment and install all dependencies in it from [requirements.txt](./requirements.txt).
-2. Execute all training tasks in one notebook, to benchmark 9 DRL algorithms in that specific environment. To best use computational resources, we suggest executing 3 notebooks at a time. Each notebook takes approximately the same time to execute as other notebooks.
+2. Execute all training tasks in one notebook, to benchmark 9 DRL algorithms in that specific environment. To best use computational resources, we suggest executing 3 notebooks at a time. Each notebook takes approximately the same time to execute as other notebooks. When execution is complete, multiple details are saved in the notebooks. This includes speed of training, running times for training and testing, best scores etc.
 
 ### Plotting graphs with Tensorboard
-When training is complete, multiple details are saved in the notebooks. This includes speed of training, running times for training and testing, best scores etc. Pretrained agents and logs are then saved in [second_benchmark/log](./second_benchmark/log) folder and can be monitored with Tensorboard to generate graph plots.
+Pretrained agents and logs are saved in [first_benchmark/log](./first_benchmark/log) folder for the first benchmark or [second_benchmark/log](./second_benchmark/log) folder for the second benchmark.
+We can monitor the logs with Tensorboard to generate graph plots.
 
 ```bash
 $ tensorboard --logdir log
