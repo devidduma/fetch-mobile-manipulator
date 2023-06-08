@@ -17,22 +17,23 @@ Supported algorithms are listed below:
 - [Hindsight Experience Replay (HER)](https://arxiv.org/abs/1707.01495)
 
 ## Usage
-We can either train each algorithm individually, or use Jupyter Notebooks to run multiple algorithms one after the other.
-- In [first_benchmark](./first_benchmark), we trained each algorithm individually using *run configurations* in the IDE.
-- In [second_benchmark](./second_benchmark), we propose using Jupyter Notebooks to train one algorithm after the other for each environment.
+
+### Installing requirements
+The first step is to install requirements. Create a virtual environment (venv) and install all dependencies in it from [requirements.txt](./requirements.txt).
+
+### Training
+We can either:
+- train each algorithm individually using using *run configurations*, like we did in [first_benchmark](./first_benchmark). 
+- use Jupyter Notebooks to run multiple algorithms one after the other, like we did in [second_benchmark](./second_benchmark).
 
 ### Training with run configurations
-Training with run configurations, like in the first benchmark, can be achieved using *run configurations* in PyCharm or another IDE. We have uploaded the run configurations used in the first benchmark.
-1. Create a virtual environment and install all dependencies in it from [requirements.txt](./requirements.txt).
-2. Execute each DRL algorithm in each environment individually and wait for results.
+Execute each off-policy learning algorithm in each environment individually and wait for results.
 
 ### Training with Jupyter Notebooks
-Training with Jupyter Notebooks, like we propose in the second benchmark, can be achieved using the following steps. For each environment, a Jupyter Notebook is available to train 9 Deep Reinforcement Learning algorithms.
-1. Create a virtual environment and install all dependencies in it from [requirements.txt](./requirements.txt).
-2. Execute all training tasks in one notebook, to benchmark 9 DRL algorithms in that specific environment. To best use computational resources, we suggest executing 3 notebooks at a time. Each notebook takes approximately the same time to execute as other notebooks. When execution is complete, multiple details are saved in the notebooks. This includes speed of training, running times for training and testing, best scores etc.
+Execute all training tasks in one notebook, to benchmark 4 off-policy learning algorithms in that specific environment. To best use computational resources, we suggest executing 3 notebooks at a time. Each notebook takes approximately the same time to execute as other notebooks. When execution is complete, multiple details are saved in the notebooks. This includes speed of training, running times for training and testing, best scores etc.
 
 ### Plotting graphs with Tensorboard
-Pretrained agents and logs are saved in [first_benchmark/log](./first_benchmark/log) folder for the first benchmark or [second_benchmark/log](./second_benchmark/log) folder for the second benchmark.
+Pretrained agents and logs are saved in `./log` folder.
 We can monitor the logs with Tensorboard to generate graph plots.
 
 ```bash
