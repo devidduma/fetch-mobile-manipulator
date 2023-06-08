@@ -1,5 +1,5 @@
-# fetch-mobile-manipulator
-Off-policy learning in robotics simulation with Fetch mobile manipulator.
+# Fetch Mobile Manipulator
+#### Off-policy learning in robotics simulation with Fetch mobile manipulator.
 
 ## Abstract
 
