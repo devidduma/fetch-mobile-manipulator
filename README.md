@@ -17,17 +17,19 @@ Supported algorithms are listed below:
 - [Hindsight Experience Replay (HER)](https://arxiv.org/abs/1707.01495)
 
 ## Usage
-We can either train each task individually, or use Jupyter Notebooks to run multiple tasks one after the other.
-- In [first_benchmark](./first_benchmark), we trained each task individually using *run configurations* in the IDE.
-- In [second_benchmark](./second_benchmark), we propose using Jupyter Notebooks to train one task after the other for each environment.
+We can either train each algorithm individually, or use Jupyter Notebooks to run multiple algorithms one after the other.
+- In [first_benchmark](./first_benchmark), we trained each algorithm individually using *run configurations* in the IDE.
+- In [second_benchmark](./second_benchmark), we propose using Jupyter Notebooks to train one algorithm after the other for each environment.
 
 ### Training with run configurations
 Training with run configurations, like in the first benchmark, can be achieved using *run configurations* in PyCharm or another IDE. We have uploaded the run configurations used in the first benchmark.
+1. Create a virtual environment and install all dependencies in it from [requirements.txt](./requirements.txt).
+2. Run each DRL algorithm in each environment individually and wait for results.
 
 ### Training with Jupyter Notebooks
 Training with Jupyter Notebooks, like we propose in the second benchmark, can be achieved using the following steps. For each environment, a Jupyter Notebook is available to train 9 Deep Reinforcement Learning algorithms.
 1. Create a virtual environment and install all dependencies in it from [requirements.txt](./requirements.txt).
-2. Execute all tasks in one notebook, to benchmark 9 DRL algorithms in that specific environment. To best use computational resources, we suggest executing 3 notebooks at a time. Each notebook takes approximately the same time to execute as other notebooks.
+2. Execute all training tasks in one notebook, to benchmark 9 DRL algorithms in that specific environment. To best use computational resources, we suggest executing 3 notebooks at a time. Each notebook takes approximately the same time to execute as other notebooks.
 3. When execution is complete, multiple details are saved in the notebooks. This includes speed of training, running times for training and testing, best scores etc. Pretrained agents and logs are then saved in [benchmark/log](./benchmark/log) folder and can be monitored with Tensorboard to generate graph plots.
 
 ```bash
@@ -38,9 +40,9 @@ $ tensorboard --logdir log
 All results from the first benchmark in our experiments are saved in the [first_benchmark](./first_benchmark) folder.
  - [first_benchmark/log](./first_benchmark/log) folder: contains all pretrained agents and logs, which can be plotted with Tensorboard.
  - [first_benchmark/plots](./first_benchmark/plots) folder: graph plots generated with Tensorboard.
- - [first_benchmark/outputs](./first_benchmark/outputs) folder: contains command line outputs from the beginning of training until the end of training for each task.
+ - [first_benchmark/outputs](./first_benchmark/outputs) folder: contains command line outputs from the beginning of training until the end of training for each training task.
 
 ## Video demonstrations
-For each task, we have generated video demonstrations of our pretrained agents and saved the videos in the [demonstrations](./demonstrations) folder.
+For each task solved by an algorithm, we have generated video demonstrations of our pretrained agents and saved the videos in the [demonstrations](./demonstrations) folder.
 
-To generate new videos, simply run the script [demonstrations/demonstrations.py](./demonstrations/demonstrations.py). This will generate new videos for all tasks in all environments in batch.
+To generate new videos, simply run the script [demonstrations/demonstrations.py](./demonstrations/demonstrations.py). This will generate new videos for all training tasks in all environments in batch.
