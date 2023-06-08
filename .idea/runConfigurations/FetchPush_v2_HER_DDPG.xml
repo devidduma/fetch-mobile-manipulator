@@ -7,13 +7,12 @@
       <env name="PYTHONUNBUFFERED" value="1" />
     </envs>
     <option name="SDK_HOME" value="G:\DD\fetch-mobile-manipulator\venv\Scripts\python.exe" />
-    <option name="SDK_NAME" value="Python 3.8 (fetch-mobile-manipulator)" />
     <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/examples" />
     <option name="IS_MODULE_SDK" value="false" />
     <option name="ADD_CONTENT_ROOTS" value="true" />
     <option name="ADD_SOURCE_ROOTS" value="true" />
     <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-    <option name="SCRIPT_NAME" value="$PROJECT_DIR$/examples/fetch_her_ddpg.py" />
+    <option name="SCRIPT_NAME" value="C:\Users\devid\PycharmProjects\fetch-mobile-manipulator\fetch_her_ddpg.py" />
     <option name="PARAMETERS" value="--task FetchPush-v2 --hidden-sizes 256 256 256 --actor-lr 1e-4 --critic-lr 3e-4 --gamma 0.98 --epoch 300 --step-per-epoch 5000" />
     <option name="SHOW_COMMAND_LINE" value="false" />
     <option name="EMULATE_TERMINAL" value="false" />
