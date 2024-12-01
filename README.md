@@ -2,15 +2,16 @@
 #### Off-policy learning in robotics simulation with Fetch mobile manipulator.
 
 ## Video demonstrations
-For each task solved by an algorithm, we have generated video demonstrations of our pretrained agents and saved the videos in the [demonstrations](./demonstrations) folder.
 
-To generate new videos, simply run the script [demonstrations/demonstrations.py](./demonstrations/demonstrations.py). This will generate new videos for all training tasks in all environments in batch.
-
-### Example: Pretrained agents using REDQ
+### Pretrained agents using REDQ
 
 | Fetch Reach | Fetch Push | Fetch Pick and Place                                                                  |
 |-------------|------------|---------------------------------------------------------------------------------------|
 | ![REDQ_FetchReach-v4](./demonstrations/gifs/REDQ_FetchReach-v4_GIF.gif) | ![REDQ_FetchPush-v4](./demonstrations/gifs/REDQ_FetchPush-v4_GIF.gif) | ![REDQ_FetchPickAndPlace-v4](./demonstrations/gifs/REDQ_FetchPickAndPlace-v4_GIF.gif) |
+
+For each task solved by an algorithm, we have generated video demonstrations of our pretrained agents and saved the videos in the [demonstrations](./demonstrations) folder.
+
+To generate new videos, simply run the script [demonstrations/demonstrations.py](./demonstrations/demonstrations.py). This will generate new videos for all training tasks in all environments in batch.
 
 ## Abstract
 
