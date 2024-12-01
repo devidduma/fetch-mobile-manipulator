@@ -1,6 +1,17 @@
 # Fetch Mobile Manipulator
 #### Off-policy learning in robotics simulation with Fetch mobile manipulator.
 
+## Video demonstrations
+For each task solved by an algorithm, we have generated video demonstrations of our pretrained agents and saved the videos in the [demonstrations](./demonstrations) folder.
+
+To generate new videos, simply run the script [demonstrations/demonstrations.py](./demonstrations/demonstrations.py). This will generate new videos for all training tasks in all environments in batch.
+
+### Example: Pretrained agents using REDQ
+
+| Fetch Reach | Fetch Push | Fetch Pick and Place                                                                  |
+|-------------|------------|---------------------------------------------------------------------------------------|
+| ![REDQ_FetchReach-v4](./demonstrations/gifs/REDQ_FetchReach-v4_GIF.gif) | ![REDQ_FetchPush-v4](./demonstrations/gifs/REDQ_FetchPush-v4_GIF.gif) | ![REDQ_FetchPickAndPlace-v4](./demonstrations/gifs/REDQ_FetchPickAndPlace-v4_GIF.gif) |
+
 ## Abstract
 
 In robotics, physics-based simulations are crucial for training real-life robots. Simulations have seen adoption accelerated by the rapid growth in computational power over the last three decades (Liu & Negrut, 2021). Robots are very complicated systems, training them in the real world can be challenging, since execution and feedback is slow. Physics-based simulation allows sampling experience millions times faster than in the real world, making it possible to train very complicated robots. 
@@ -46,13 +57,3 @@ All results from the first benchmark in our experiments are saved in the [first_
  - [first_benchmark/plots](./first_benchmark/plots) folder: graph plots generated with Tensorboard.
  - [first_benchmark/outputs](./first_benchmark/outputs) folder: contains command line outputs from the beginning of training until the end of training for each training task.
 
-## Video demonstrations
-For each task solved by an algorithm, we have generated video demonstrations of our pretrained agents and saved the videos in the [demonstrations](./demonstrations) folder.
-
-To generate new videos, simply run the script [demonstrations/demonstrations.py](./demonstrations/demonstrations.py). This will generate new videos for all training tasks in all environments in batch.
-
-### Example: Pretrained agents using REDQ
-
-| Fetch Reach | Fetch Push | Fetch Pick and Place                                                                  |
-|-------------|------------|---------------------------------------------------------------------------------------|
-| ![REDQ_FetchReach-v4](./demonstrations/gifs/REDQ_FetchReach-v4_GIF.gif) | ![REDQ_FetchPush-v4](./demonstrations/gifs/REDQ_FetchPush-v4_GIF.gif) | ![REDQ_FetchPickAndPlace-v4](./demonstrations/gifs/REDQ_FetchPickAndPlace-v4_GIF.gif) |
