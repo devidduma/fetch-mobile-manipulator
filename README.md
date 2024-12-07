@@ -42,7 +42,7 @@ We can either:
 Execute each off-policy learning algorithm in each environment individually and wait for results.
 
 ### Training with Jupyter Notebooks
-Execute all training tasks in one notebook, to benchmark 4 off-policy learning algorithms in that specific environment. To best use computational resources, we suggest executing 4 notebooks at the same time in parallel. Each notebook takes approximately the same time to execute as other notebooks. When execution is complete, multiple details are saved in the notebooks. This includes speed of training, running times for training and testing, best scores etc.
+Execute all training tasks in one notebook, to benchmark 4 off-policy learning algorithms in that specific environment. To best use computational resources, we suggest executing 4 notebooks at the same time in parallel. Each notebook takes approximately the same time to execute as other notebooks. When execution is complete, multiple details are saved in the notebooks. This includes speed of training, running times for training and testing, best scores etc. 
 
 ### Plotting graphs with Tensorboard
 Pretrained agents and logs are saved in `./log` folder.
