@@ -1,6 +1,7 @@
 # Fetch Mobile Manipulator
 ### Off-policy learning in robotics simulation with Fetch mobile manipulator
 
+
 ## Video demonstrations
 
 | Fetch Reach | Fetch Push | Fetch Pick and Place                                                                  |
