@@ -1,5 +1,15 @@
-# fetch-mobile-manipulator
-Off-policy learning in robotics simulation with Fetch mobile manipulator.
+# Fetch Mobile Manipulator
+### Off-policy learning in robotics simulation with Fetch mobile manipulator
+
+## Video demonstrations
+
+| Fetch Reach | Fetch Push | Fetch Pick and Place                                                                  |
+|-------------|------------|---------------------------------------------------------------------------------------|
+| ![FetchReach-v4](./demonstrations/gifs/FetchReach-v4.gif) | ![FetchPush-v4](./demonstrations/gifs/FetchPush-v4.gif) | ![FetchPickAndPlace-v4](./demonstrations/gifs/FetchPickAndPlace-v4.gif) |
+
+For each task, we have generated video demonstrations of our pretrained agents and saved the videos in the [demonstrations](./demonstrations) folder.
+
+To generate new videos, simply run the script [demonstrations/demonstrations.py](./demonstrations/demonstrations.py). This will generate new videos for all training tasks in all environments in batch.
 
 ## Abstract
 
@@ -10,39 +20,27 @@ In this project, we apply Off-Policy Deep Reinforcement Learning methods to Fetc
 ## Supported algorithms
 
 Supported algorithms are listed below:
-- [Deep Deterministic Policy Gradient (DDPG)](https://arxiv.org/pdf/1509.02971.pdf)
-- [Twin Delayed DDPG (TD3)](https://arxiv.org/pdf/1802.09477.pdf)
-- [Soft Actor-Critic (SAC)](https://arxiv.org/pdf/1812.05905.pdf)
-- [Randomized Ensembled Double Q-Learning (REDQ)](https://arxiv.org/pdf/2101.05982.pdf)
-- [Hindsight Experience Replay (HER)](https://arxiv.org/abs/1707.01495)
+- [Deep Deterministic Policy Gradient (DDPG)](https://arxiv.org/pdf/1509.02971.pdf), [commit id](https://github.com/thu-ml/tianshou/tree/e605bdea942b408126ef4fbc740359773259c9ec)
+- [Twin Delayed DDPG (TD3)](https://arxiv.org/pdf/1802.09477.pdf), [commit id](https://github.com/thu-ml/tianshou/tree/e605bdea942b408126ef4fbc740359773259c9ec)
+- [Soft Actor-Critic (SAC)](https://arxiv.org/pdf/1812.05905.pdf), [commit id](https://github.com/thu-ml/tianshou/tree/e605bdea942b408126ef4fbc740359773259c9ec)
+- [Randomized Ensembled Double Q-Learning (REDQ)](https://arxiv.org/pdf/2101.05982.pdf), [commit id](https://github.com/thu-ml/tianshou/tree/dd16818ce4392cd82a44a8450529450dbf759666)
+- [Hindsight Experience Replay (HER)](https://arxiv.org/abs/1707.01495), [commit id](https://github.com/thu-ml/tianshou/tree/d42a5fb3542ab1db49b051aa4fe24cdbadf842a3)
 
 ## Usage
-We can either train each task individually, or use Jupyter Notebooks to run multiple tasks, one after the other.
-- In [first_benchmark](./first_benchmark), we trained each task individually.
-- In [second_benchmark](./second_benchmark), we propose using Jupyter Notebooks to train one task after the other for each environment.
 
-### Training with run configurations
-Training with run configurations, like we did in the first benchmark, can be achieved using *run configurations* in PyCharm or another IDE. We have uploaded the run configurations used in the first benchmark.
-
-### Training with Jupyter Notebooks
-Training with Jupyter Notebooks, like we propose in the second benchmark, can be achieved using the following steps.
-
-For each environment, a Jupyter Notebook is available to train 9 Deep Reinforcement Learning algorithms. To run the benchmark, go through the following steps:
-1. Create a virtual environment and install all dependencies in it from [requirements.txt](./requirements.txt).
-2. Execute all tasks in one notebook, to benchmark 9 DRL algorithms in that specific environment. To best use computational resources, we suggest executing 3 notebooks at a time. Each notebook takes approximately the same time to execute as other notebooks.
-3. When execution is complete, multiple details are saved in the notebooks. This includes speed of training, running times for training and testing, best scores etc. Pretrained agents and logs are then saved in [benchmark/log](./benchmark/log) folder and can be monitored with Tensorboard to generate graph plots.
+Refer to the [benchmark](./benchmark) folder to reproduce the experimental results.
+1. Create a virtual environment (venv) and install all dependencies in it from [requirements.txt](./requirements.txt).
+2. Train each algorithm individually using *run configurations*. 
+3. Pretrained agents and logs are saved in `./log` folder.
+We can monitor the logs with Tensorboard to generate graph plots.
 
 ```bash
 $ tensorboard --logdir log
 ```
 
-## Results from first benchmark
-All results from the first benchmark in our experiments are saved in the [first_benchmark](./first_benchmark) folder.
- - [first_benchmark/log](./first_benchmark/log) folder: contains all pretrained agents and logs, which can be plotted with Tensorboard.
- - [first_benchmark/plots](./first_benchmark/plots) folder: graph plots generated with Tensorboard.
- - [first_benchmark/outputs](./first_benchmark/outputs) folder: contains command line outputs from the beginning of training until the end of training for each task.
+## Results
+All results from our experiments are saved in the [benchmark](./benchmark) folder.
+ - [benchmark/log](benchmark/log): contains all pretrained agents and logs, which can be plotted with Tensorboard.
+ - [benchmark/plots](benchmark/plots): graph plots generated with Tensorboard.
+ - [benchmark/outputs](benchmark/outputs): contains command line outputs from the beginning of training until the end of training for each training task.
 
-## Video demonstrations
-For each task, we have generated video demonstrations of our pretrained agents and saved the videos in the [demonstrations](./demonstrations) folder.
-
-To generate new videos, simply run the script [demonstrations/demonstrations.py](./demonstrations/demonstrations.py). This will generate new videos for all tasks in all environments in batch.
